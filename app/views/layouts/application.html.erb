@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>FollowMap</title>
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Arimo|Ubuntu|Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag '//maps.googleapis.com/maps/api/js?key=#{Figaro.env.google_map_api}' %>
@@ -47,7 +48,7 @@
         <div class="large-5 columns about-container">
           <h5>About</h5>
           <p>Who are we</p>
-          <p>What is crowfunder</p>
+          <p>What is Map me</p>
           <p>Jobs</p>
           <p>Press</p>
         </div>
@@ -63,14 +64,13 @@
       <hr>
       <div class="row ">
         <div class="large-6 columns social-container">
-          <p class="">© Crowdfunder</p>
+          <p class="">© Map me</p>
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right social-container">
             <li><a href="#"><i class="fa fa-twitter social-icons" style=" color: silver"></i></a></li>
             <li><a href="#"><i class="fa fa-tumblr social-icons" style=" color: silver"></i></a></li>
             <li><a href="#"><i class="fa fa-facebook social-icons" style=" color: silver"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble social-icons" style=" color: silver"></i></a></li>
             <li><a href="#"><i class="fa fa-google-plus social-icons" style=" color: silver"></i></a></li>
           </ul>
         </div>

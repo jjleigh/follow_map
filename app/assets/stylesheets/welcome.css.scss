@@ -29,17 +29,17 @@ ul.right {
 
 
 .learn-more {
-	background-color: gray;
+	background-color: rgba(0, 0, 0, 0.8);
 	bottom: 0;
 
 	h5 {
-		font-family: lato;
+		font-family: ubuntu;
 		color: silver;
 	}
 
 	p{ 
 		/*padding-bottom: 50px;*/
-		font-family: lato;
+		font-family: ubuntu;
 		font-weight: 300;
 		color: silver
 	}
@@ -48,13 +48,6 @@ ul.right {
 hr {
 	margin-bottom: 0;
 }
-
-
-.social-container {
-	margin-top: 16px;
-	padding-bottom: 40px;
-}
-
 /*styling for footer links*/
 
 .about-container {
