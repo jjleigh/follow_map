@@ -8,23 +8,49 @@
       </div>
     </div>
 
-      <div class="large-6 medium-centered columns">
-        <div class="site-forms">
-          <%= form_tag sessions_path do %>
-            <div class="field">
-              <%= label_tag :email %><br/>
-              <%= text_field_tag :email, params[:email] %>
-            </div>
-            <div class="field">
-              <%= label_tag :password %><br/>
-              <%= password_field_tag :password %>
-            </div>
-            <div class="actions">
-              <%= submit_tag "Log in", :class => 'button save-button' %>
-            </div>
-          <% end %>
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>
+
+
+
+<div class="con-tainer">
+    <div class="row">
+      <div class="small-12 small-centered colmuns">
+        <div class="contact-container">
+
+          <div class="container-left">
+            <ul class="list">
+              <li class="contact-left"><%= link_to 'sign in with google +', :class => 'button [tiny small large] '%></li>
+              <li class="contact-left"><%= link_to 'sign in with twitter', :class => 'button [tiny small large] '%></li>
+              <li class="contact-left"><%= link_to 'sign in with facebook', :class => 'button [tiny small large] '%></li>
+            </ul>
+          </div>
+
+          <div class="container-right">
+            <ul class="list">
+              <div class="large-12 medium-centered columns">
+                <div class="site-forms">
+                  <%= form_tag sessions_path do %>
+                    <div class="field">
+                      <%= label_tag :email %><br/>
+                      <%= text_field_tag :email, params[:email] %>
+                    </div>
+                    <div class="field">
+                      <%= label_tag :password %><br/>
+                      <%= password_field_tag :password %>
+                    </div>
+                    <div class="actions">
+                      <%= submit_tag "Log in", :class => 'button [tiny small large]save-button' %>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          </div>
+      </div>
+    </div>
+  </div>

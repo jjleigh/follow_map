@@ -1,3 +1,55 @@
-// Place all the styles related to the sessions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.form-header {
+	margin-top: 80px;
+}
+
+
+.contact-container {
+	width:90%;
+	margin: 80px auto 0 auto;
+}
+
+.container-left {
+	width:45%;
+	text-align: right;
+	border-right: 1px solid #eee;
+	padding-right: 40px;
+	float: left;
+	font-family: Julius Sans One;
+}
+
+.container-right {
+	font-family: Inconsolata;
+	border-left: 1px solid black;
+	width:45%;
+	text-align: left;
+	float: left;
+}
+/*the code below deals with the left and right li*/
+.contact-left {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	display: block;
+	font-size: 25px;
+}
+
+.contact-right {
+	padding-top: 8px;
+	padding-bottom: 25px;
+	display: block;
+	font-size: 17px;
+}
+/* the links below deals with the social media links*/
+.social-ul {
+	list-style: none;
+	padding-left: 0;
+}
+.social-li {
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+
+.clearfix {
+		clear:both;
+	}
