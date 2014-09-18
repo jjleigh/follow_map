@@ -1,7 +1,6 @@
 var Map = {};
+Map.nearby_marker_img = 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
 
-Map.latitude = 43.64225662;
-Map.longitude = -79.3870568;
 
 function intializeMap() {
 	Map.options = {
@@ -11,6 +10,23 @@ function intializeMap() {
 	};
 
 	Map.canvas = new google.maps.Map($('#map-canvas')[0], Map.options);
+	if (Map.showMarkers) {
+		var myMarker = new google.maps.Marker ({
+			position: new google.maps.LatLng(Map.longitude, Map.latitude),
+			map: Map.canvas
+		});
+	}
+}
+
+function addMarkers(coords) {
+	coords.forEach(function (coord) {
+		var myMarker = new google.maps.Marker ({
+			position: new google.maps.LatLng(Map.longitude, Map.latitude),
+			map: Map.canvas,
+			icon: Map.nearby_marker_img
+		});
+	});
+
 }
 
 $(document).on('ready page:load', function() {
