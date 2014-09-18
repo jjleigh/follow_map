@@ -9,16 +9,25 @@
 
 /*styling for the form and the */
 .contact-container {
-	width:90%;
-	margin: 20px auto 0 ;
+	width:100%;
+	margin: 40px auto 0 ;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .container-left {
+	/*padding-top: 30px;*/
+	padding-bottom: 20px;
+	margin-left: 20px;
 	width:45%;
 	text-align: right;
 	/*border-right: 1px solid #eee;*/
 	padding-right: 50px;
 	float: left;
+	
+
+	height: 200px;
+
 
 	a {
 		font-family: ubuntu;
@@ -26,17 +35,23 @@
 }
 
 .container-right {
-	padding-top: 12px;
+	/*padding-top: 12px;*/
 	font-family: Inconsolata;
 	border-left: 1px solid black;
 	width:40%;
 	text-align: left;
 	float: left;
+	height: 200px;
+	padding-bottom: 30px;
 }
 /*the code below deals with the left and right li*/
+
+ul.list {
+	margin-right: 0;
+}
 .contact-left {
-	padding-top: 30px;
-	padding-bottom: 25px;
+	padding-top: 5px;
+	padding-bottom: 0px;
 	display: block;
 	font-size: 20px;
 }
@@ -61,9 +76,15 @@
 	border: 1px solid gray;
 	border-radius: 5px;
 }
-/*	.site-forms {
-		border: 1px solid gray;
-	}*/
+	.site-forms input {
+		border-radius: 3px;
+		font-family: ubuntu;
+		margin: 0;
+	}
+
+	.site-forms .actions {
+		margin-top: 33px;
+	}
 
 	.site-forms label{
 		display: none;
@@ -71,6 +92,7 @@
 	/*styling for the login and sign up button*/
 
 	.save-button {
+		margin-top: 25px;
 		background-color: silver;
 		border-radius: 3px !important;
 	}
@@ -80,5 +102,46 @@
 
 	}
 
+/*styling for the google twitter and facebook buttons*/
 
+.goog {
 
+	background-color: #F22E0C;
+	border-radius: 3px;
+
+	
+		font-size: 18px !important;
+	
+}
+
+.goog:hover {
+	background-color: #F22E0C;
+}
+
+.twit {
+
+	background-color: #27C6F5;
+	border-radius: 3px;
+
+	
+		font-size: 18px !important;
+	
+}
+
+.twit:hover {
+	background-color: #27C6F5;
+}
+
+.faceb {
+
+	background-color: #294BA6;
+	border-radius: 3px;
+
+	
+		font-size: 18px !important;
+	
+}
+
+.faceb:hover {
+	background-color: #294BA6;
+}

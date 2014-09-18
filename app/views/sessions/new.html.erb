@@ -18,15 +18,23 @@
 
               <div class="container-left">
                 <ul class="list">
-                  <li class="contact-left"><%= link_to 'sign in with google +', :class => 'button [tiny small large] '%></li>
-                  <li class="contact-left"><%= link_to 'sign in with twitter', :class => 'button [tiny small large] '%></li>
-                  <li class="contact-left"><%= link_to 'sign in with facebook', :class => 'button [tiny small large] '%></li>
+                  <li class="contact-left ">
+                  
+                    <%= link_to 'sign in with google +', "/auth/google", :class => 'button [tiny small large] goog'%>
+                  </li>
+                  <li class="contact-left ">
+                    <%= link_to 'sign in with twitter', "/auth/twitter", :class => 'button [tiny small large] twit'%>
+                  </li>
+                  <li class="contact-left ">
+                    <%= link_to 'sign in with facebook', "/auth/facebook", :class => 'button [tiny small large] faceb'%>
+                    <div ></div>
+                  </li>
                 </ul>
               </div>
 
               <div class="container-right">
                 <ul class="list">
-                  <div class="large-12 medium-centered columns">
+                  <div class="large-10 medium-centered columns">
                     <div class="site-forms">
                       <%= form_tag sessions_path do %>
                         <div class="field">
