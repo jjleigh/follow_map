@@ -9,7 +9,7 @@
 	Map.latitude = <%= @user.latitude.to_f %>;
 	Map.longitude = <%= @user.longitude.to_f %>;
 	Map.showMarkers = true;
-	Map.coords = @nearby_
+	Map.coords = <%= raw @nearby_followers.map{|f| {latitude: r.latitude.to_f, longitude: r.longitude.to_f}}.to_json %>
 <% end %>
 
 

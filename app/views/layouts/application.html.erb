@@ -29,8 +29,13 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="nav-link"><%= link_to 'Log in', new_session_path %></li>
-      <li class="nav-link"><%= link_to 'Sign up', new_user_path %></li>
+      <% if current_user %>
+        <li class="nav-link"><%= link_to 'profile', user_path(current_user) %></li>
+      <% else %>
+        <li class="nav-link"><%= link_to 'Log in', new_session_path %></li>
+        <li class="nav-link"><%= link_to 'Sign up', new_user_path %></li>
+      <% end %>
+
       </li>
     </ul>
     

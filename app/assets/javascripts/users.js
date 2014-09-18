@@ -21,7 +21,7 @@ function intializeMap() {
 function addMarkers(coords) {
 	coords.forEach(function (coord) {
 		var myMarker = new google.maps.Marker ({
-			position: new google.maps.LatLng(Map.longitude, Map.latitude),
+			position: new google.maps.LatLng(coord.longitude, coord.latitude),
 			map: Map.canvas,
 			icon: Map.nearby_marker_img
 		});
@@ -31,5 +31,18 @@ function addMarkers(coords) {
 
 $(document).on('ready page:load', function() {
 
-	if ($("#map-canvas").length) intializeMap();
+	if ($("#map-canvas").length) {
+		intializeMap();
+		if (Map.coords.length > 0) addMarkers(Map.coords);
+	}
+
 });
+
+
+
+
+
+
+
+
+
