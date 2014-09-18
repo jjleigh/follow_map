@@ -1,7 +1,95 @@
 #app-logo {
 	font-family: ubuntu;
 }
-/*
+
 nav.top-bar {
-	background-color: rgba(23, 25, 28, 0.6);
-}*/
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+li.name {
+
+	a {
+		font-size: 20px;
+		margin-left: 60px;
+	}
+}
+
+ul.right {
+	margin-right: 20px;
+
+	
+}
+
+/*styling for the footer*/
+
+.footer-container {
+	margin-top: 65px;
+	bottom: 0  !important;
+}
+
+
+.learn-more {
+	background-color: gray;
+	bottom: 0;
+
+	h5 {
+		font-family: lato;
+		color: silver;
+	}
+
+	p{ 
+		/*padding-bottom: 50px;*/
+		font-family: lato;
+		font-weight: 300;
+		color: silver
+	}
+}
+
+hr {
+	margin-bottom: 0;
+}
+
+
+.social-container {
+	margin-top: 16px;
+	padding-bottom: 40px;
+}
+
+/*styling for footer links*/
+
+.about-container {
+	padding-left: 200px;
+}
+
+/*styling for the background img*/
+
+.bg-img {
+
+	img {
+		-webkit-filter: grayscale(.3) opacity(0.9);
+		z-index: 50;
+		width: 100%;
+		background: -webkit-gradient(linear color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.7)));
+		width: 100%;
+		height: 600px;
+		background-repeat: no-repeat;
+		
+	}
+	/*background-color: black;*/
+ /*background-image: url('http://www.kgryte.com/blog/wp-content/uploads/2013/05/screenshot_3_720x403px.jpg');*/
+	.tag-container {
+	}
+
+	#tag-line {
+		left:35%;
+		top: 200px;
+		z-index: 99;
+		position: absolute;
+		color: rgba(0, 0, 0, 0.8);
+		bottom: 30px;
+		font-family: ubuntu;
+		margin: 0 auto;
+
+	}
+}
+

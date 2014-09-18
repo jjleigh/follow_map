@@ -19,7 +19,7 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <%= link_to 'Map me', root_url, :id => 'app-logo' %>
+          <h1><%= link_to 'Map me', root_url, :id => 'app-logo' %></h1>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -37,6 +37,48 @@
 </nav>
 
     <%= yield %>
+    <div class="learn-more">
+  
+
+  <footer class="row ">
+    <div class="large-12 columns footer-container">
+
+      <div clas="row ">
+        <div class="large-5 columns about-container">
+          <h5>About</h5>
+          <p>Who are we</p>
+          <p>What is crowfunder</p>
+          <p>Jobs</p>
+          <p>Press</p>
+        </div>
+        <div class="large-5 columns">
+          <h5>Help</h5>
+          <p>FAQ</p>
+          <p>Terms of service</p>
+          <p>Privacy policy</p>
+          <p>Trust and saftey</p>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row ">
+        <div class="large-6 columns social-container">
+          <p class="">© Crowdfunder</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right social-container">
+            <li><a href="#"><i class="fa fa-twitter social-icons" style=" color: silver"></i></a></li>
+            <li><a href="#"><i class="fa fa-tumblr social-icons" style=" color: silver"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook social-icons" style=" color: silver"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble social-icons" style=" color: silver"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus social-icons" style=" color: silver"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
+</div> 
+ 
     <%= javascript_include_tag "application" %>
   </body>
 </html>

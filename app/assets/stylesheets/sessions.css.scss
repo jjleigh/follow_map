@@ -1,13 +1,11 @@
 .form-header {
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 /*styling for the form and the */
-
-
 .contact-container {
 	width:90%;
-	margin: 80px auto 0 ;
+	margin: 20px auto 0 ;
 }
 
 .container-left {
@@ -52,6 +50,15 @@
 
 
 	/*styling for the form */
+.form-containers {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+/*	.site-forms {
+		border: 1px solid gray;
+	}*/
 
 	.site-forms label{
 		display: none;
