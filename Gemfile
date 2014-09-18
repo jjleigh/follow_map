@@ -33,6 +33,11 @@ gem 'figaro'
 gem 'geocoder'
 gem 'foundation-rails'
 
+gem 'omniauth'
+gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
+gem 'omniauth-facebook', github: 'mkdynamic/omniauth-facebook'
+gem "omniauth-google-oauth2"
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
