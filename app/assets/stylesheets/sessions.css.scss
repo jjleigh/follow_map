@@ -2,25 +2,31 @@
 	margin-top: 80px;
 }
 
+/*styling for the form and the */
+
 
 .contact-container {
 	width:90%;
-	margin: 80px auto 0 auto;
+	margin: 80px auto 0 ;
 }
 
 .container-left {
 	width:45%;
 	text-align: right;
-	border-right: 1px solid #eee;
-	padding-right: 40px;
+	/*border-right: 1px solid #eee;*/
+	padding-right: 50px;
 	float: left;
-	font-family: Julius Sans One;
+
+	a {
+		font-family: ubuntu;
+	}
 }
 
 .container-right {
+	padding-top: 12px;
 	font-family: Inconsolata;
 	border-left: 1px solid black;
-	width:45%;
+	width:40%;
 	text-align: left;
 	float: left;
 }
@@ -29,27 +35,38 @@
 	padding-top: 30px;
 	padding-bottom: 25px;
 	display: block;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .contact-right {
-	padding-top: 8px;
+	padding-top: 30px;
 	padding-bottom: 25px;
 	display: block;
 	font-size: 17px;
-}
-/* the links below deals with the social media links*/
-.social-ul {
-	list-style: none;
-	padding-left: 0;
-}
-.social-li {
-	display: inline-block;
-	padding-right: 10px;
-	font-size: 20px;
 }
 
 
 .clearfix {
 		clear:both;
 	}
+
+
+	/*styling for the form */
+
+	.site-forms label{
+		display: none;
+}
+	/*styling for the login and sign up button*/
+
+	.save-button {
+		background-color: silver;
+		border-radius: 3px !important;
+	}
+
+	.save-button:hover {
+		background-color: silver;
+
+	}
+
+
+

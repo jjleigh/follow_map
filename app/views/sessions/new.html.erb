@@ -30,19 +30,19 @@
 
           <div class="container-right">
             <ul class="list">
-              <div class="large-12 medium-centered columns">
+              <div class="large-10 medium-centered columns">
                 <div class="site-forms">
                   <%= form_tag sessions_path do %>
                     <div class="field">
                       <%= label_tag :email %><br/>
-                      <%= text_field_tag :email, params[:email] %>
+                      <%= text_field_tag :email, params[:email], :placeholder => "Email" %>
                     </div>
                     <div class="field">
                       <%= label_tag :password %><br/>
-                      <%= password_field_tag :password %>
+                      <%= password_field_tag :password, :placeholder => "password" %>
                     </div>
                     <div class="actions">
-                      <%= submit_tag "Log in", :class => 'button [tiny small large]save-button' %>
+                      <%= submit_tag "Log in", :class => 'button [tiny small large] save-button' %>
                     </div>
                   <% end %>
                 </div>
