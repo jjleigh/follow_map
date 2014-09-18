@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>FollowMap</title>
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <link href='http://fonts.googleapis.com/css?family=Arimo|Ubuntu|Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag '//maps.googleapis.com/maps/api/js?key=#{Figaro.env.google_map_api}' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,6 +16,30 @@
   </head>
 
   <body>
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <%= link_to 'Follow map', root_url %>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+  </section>
+</nav>
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
