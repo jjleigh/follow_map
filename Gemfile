@@ -30,6 +30,7 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'figaro'
+gem 'geocoder'
 
 # Use unicorn as the app server
 # gem 'unicorn'
