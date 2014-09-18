@@ -2,9 +2,11 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
 
+  match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+
+  match "log_out" => "sessions#destroy", :as => "log_out", via: [:get, :post]
   root to: "welcome#index"
 
-  get "log_out" => "sessions#destroy", :as => "log_out"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
