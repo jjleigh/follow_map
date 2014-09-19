@@ -1,16 +1,20 @@
 class User < ActiveRecord::Base
 	has_secure_password
 	has_many :friends
-	# validates_presence_of :first_name, :last_name, :email, :password, :password_confirmation
-
+	
+	def self.from_omniauth(auth)
+    find_by_provider_and_uid(auth["provider"], auth["uid"]) || create_with_omniauth(auth)
+  end
 
 	def self.create_with_omniauth(auth)
 		create! do |user|
-			user.provider = auth[:provider]
-			user.uid = auth[:uid]
-			# user.first_name = auth[:first_name]
-			# user.last_name = auth[:last_name]
-			# user.email = auth[:email]
+			user.provider = auth['provider']
+			user.uid = auth['uid'] 
+			user.name = auth['info']['name'] || ''
+			user.address = auth['info']['location'] || ''
+			user.image = auth["info"]["image"] || ''
+			user.oauth_token = auth["credentials"]["token"] || ''
+			user.oauth_secret = auth["credentials"]["secret"] || ''
 		end
 		
 	end
