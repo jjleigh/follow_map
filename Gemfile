@@ -33,7 +33,7 @@ gem 'figaro'
 gem 'geocoder'
 gem 'foundation-rails'
 
-gem 'omniauth'
+gem 'omniauth-identity'
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
 gem 'omniauth-facebook', github: 'mkdynamic/omniauth-facebook'
 gem "omniauth-google-oauth2"
