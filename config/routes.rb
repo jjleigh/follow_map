@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :users
   resources :sessions
+  resources :identities
 
   match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
 
