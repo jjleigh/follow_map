@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
 			user.image = auth["info"]["image"] || ''
 			user.oauth_token = auth["credentials"]["token"] || ''
 			user.oauth_secret = auth["credentials"]["secret"] || ''
+			user.save!
 		end
 		
 	end
