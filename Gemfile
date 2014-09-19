@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -34,9 +34,24 @@ gem 'geocoder'
 gem 'foundation-rails'
 
 gem 'omniauth-identity'
+gem 'omniauth'
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
 gem 'omniauth-facebook', github: 'mkdynamic/omniauth-facebook'
 gem "omniauth-google-oauth2"
+
+gem "twitter"
+gem "instagram"
+# facebook api gem
+gem "koala", "~> 1.10.0rc"
+gem "google-api-client"
+
+group :production, :staging do
+	gem 'rails_12factor'
+	gem 'pg' 
+end 
+
+ruby "2.1.0"
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
