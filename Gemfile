@@ -33,11 +33,13 @@ gem 'figaro'
 gem 'geocoder'
 gem 'foundation-rails'
 
-gem 'omniauth-identity'
+# gem 'omniauth-identity'
+# gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
 gem 'omniauth-facebook', github: 'mkdynamic/omniauth-facebook'
 gem "omniauth-google-oauth2"
+
 
 gem "twitter"
 gem "instagram"
@@ -52,7 +54,7 @@ end
 
 ruby "2.1.0"
 
-
+gem "pry-rails"
 # Use unicorn as the app server
 # gem 'unicorn'
 

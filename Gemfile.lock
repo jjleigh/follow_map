@@ -49,10 +49,9 @@ GEM
       extlib (>= 0.9.15)
       multi_json (>= 1.0.0)
     bcrypt (3.1.7)
-    bcrypt-ruby (3.1.5)
-      bcrypt (>= 3.1.3)
     buftok (0.2.0)
     builder (3.2.2)
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -115,6 +114,7 @@ GEM
       mime-types (>= 1.16, < 3)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    method_source (0.8.2)
     mime-types (2.3)
     minitest (5.4.1)
     multi_json (1.10.1)
@@ -134,9 +134,6 @@ GEM
     omniauth-google-oauth2 (0.2.5)
       omniauth (> 1.0)
       omniauth-oauth2 (~> 1.1)
-    omniauth-identity (1.1.1)
-      bcrypt-ruby (~> 3.0)
-      omniauth (~> 1.0)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
@@ -146,6 +143,12 @@ GEM
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     pg (0.17.1)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -188,6 +191,7 @@ GEM
       jwt (>= 0.1.5)
       multi_json (>= 1.0.0)
     simple_oauth (0.2.0)
+    slop (3.6.0)
     spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -238,9 +242,9 @@ DEPENDENCIES
   omniauth
   omniauth-facebook!
   omniauth-google-oauth2
-  omniauth-identity
   omniauth-twitter!
   pg
+  pry-rails
   rails (= 4.1.6)
   rails_12factor
   sass-rails (~> 4.0.3)

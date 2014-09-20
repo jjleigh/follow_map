@@ -1,10 +1,8 @@
 class User < ActiveRecord::Base
-	has_secure_password
-	has_many :friends
-	
-	def self.from_omniauth(auth)
-    find_by_provider_and_uid(auth["provider"], auth["uid"]) || create_with_omniauth(auth)
-  end
+	has_many :followers
+	# def self.from_omniauth(auth)
+ #    find_by_provider_and_uid(auth["provider"], auth["uid"]) || create_with_omniauth(auth)
+ #  end
 
 	def self.create_with_omniauth(auth)
 		create! do |user|

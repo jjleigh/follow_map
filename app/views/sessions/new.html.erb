@@ -19,13 +19,15 @@
               <div class="container-left">
                 <ul class="list">
                   <li class="contact-left ">
-                  
+                    <%#= link_to "Sign in with google +", user_omniauth_authorize_path(:google_oauth2), :class => 'button [tiny small large] goog'%>
                     <%= link_to 'sign in with google +', "/auth/google_oauth2", :class => 'button [tiny small large] goog'%>
                   </li>
                   <li class="contact-left ">
-                    <%= link_to 'sign in with twitter', "/auth/twitter", :class => 'button [tiny small large] twit'%>
+                    <%#= link_to "Sign in with twitter", user_omniauth_authorize_path(:twitter), :class => 'button [tiny small large] twit'%>
+                    <%= link_to 'sign in with twitter', "/auth/twitter", :class => 'button [tiny small large] twit' %>
                   </li>
                   <li class="contact-left ">
+                    <%#= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), :class => 'button [tiny small large] faceb' %>
                     <%= link_to 'sign in with facebook', "/auth/facebook", :class => 'button [tiny small large] faceb'%>
                     <div ></div>
                   </li>
@@ -34,23 +36,41 @@
 
               <div class="container-right">
                 <ul class="list">
-                  <div class="large-10 medium-centered columns">
+
+
+                  <li class="contact-left ">
+                    <%#= link_to "Sign in with google +", user_omniauth_authorize_path(:google_oauth2), :class => 'button [tiny small large] goog'%>
+                    <%= link_to 'sign in with google +', "/auth/google_oauth2", :class => 'button [tiny small large] goog'%>
+                  </li>
+                  <li class="contact-left ">
+                    <%#= link_to "Sign in with twitter", user_omniauth_authorize_path(:twitter), :class => 'button [tiny small large] twit'%>
+                    <%= link_to 'sign in with twitter', "/auth/twitter", :class => 'button [tiny small large] twit' %>
+                  </li>
+                  <li class="contact-left ">
+                    <%#= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), :class => 'button [tiny small large] faceb' %>
+                    <%= link_to 'sign in with facebook', "/auth/facebook", :class => 'button [tiny small large] faceb'%>
+                    <div ></div>
+
+
+
+
+                  <!-- <div class="large-10 medium-centered columns">
                     <div class="site-forms">
-                      <%= form_tag "/auth/identity/callback" do %>
+                      <%#= form_tag "/auth/identity/callback" do %>
                         <div class="field">
-                          <%= label_tag :auth_key, "Email" %><br/>
-                          <%= text_field_tag :auth_key, @identity.try(:email), :placeholder => "Email" %>
+                          <%#= label_tag :auth_key, "Email" %><br/>
+                          <%#= text_field_tag :auth_key, @identity.try(:email), :placeholder => "Email" %>
                         </div>
                         <div class="field">
-                          <%= label_tag :password %><br/>
-                          <%= password_field_tag :password %>
+                          <%#= label_tag :password %><br/>
+                          <%#= password_field_tag :password %>
                         </div>
                         <div class="actions">
-                          <%= submit_tag "Login", :class => 'button [tiny small large] save-button' %>
+                          <%#= submit_tag "Login", :class => 'button [tiny small large] save-button' %>
                         </div>
-                      <% end %>
+                      <%# end %>
                     </div>
-                  </div>
+                  </div> -->
                 </ul>
               </div>
               <div class="clearfix"></div>
