@@ -37,7 +37,7 @@ li.name {
 	position: relative;
 	top:500px;
 	padding-top: 100px;
-	padding-bottom: 500px;
+	padding-bottom: 300px;
 	bottom: 0;
 
 	.welcome-content-header {
@@ -50,7 +50,14 @@ li.name {
 	.welcome-content-parag {
 		p{
 			font-family: ubuntu;
+			margin-top: 50px;
 		}
+			.fa-globe {
+				font-size: 180px !important;
+				margin-top: 30px;
+				color: #203DAB;
+
+			}
 	}
 }
 /*styling for the footer*/
@@ -61,7 +68,7 @@ li.name {
 .bg-img {
 
 	img {
-		-webkit-filter: grayscale(.3) opacity(0.9);
+		-webkit-filter: grayscale(.3) opacity(0.8);
 		position: fixed;
 		z-index: 50;
 		width: 100%;
@@ -76,15 +83,28 @@ li.name {
 	.tag-container {
 	}
 
-	#tag-line {
-		left:35%;
-		top: 200px;
+	#tag-line-two {
+		left:30%;
+		top: 270px;
 		z-index: 99;
 		position: absolute;
 		color: rgba(0, 0, 0, 0.8);
 		bottom: 30px;
 		font-family: ubuntu;
-		margin: 0 auto;
+		/*margin: 0 auto;*/
+		font-size: 25px;
+	}
+
+	#tag-line {
+		left:30%;
+		top: 170px;
+		z-index: 99;
+		position: absolute;
+		color: rgba(0, 0, 0, 0.8);
+		bottom: 30px;
+		font-family: ubuntu;
+		/*margin: 0 auto;*/
+		font-size: 60px;
 
 	}
 }
