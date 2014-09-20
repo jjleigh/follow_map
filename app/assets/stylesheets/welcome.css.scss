@@ -2,13 +2,21 @@
 	font-family: ubuntu;
 }
 
+div.fixed {
+
+	z-index: 150;
+}
+
 nav.top-bar {
 	background-color: white;
+	float: none !important;
+	box-shadow: 3px 3px 3px #888888;
 }
 
 ul.title-area {
 		margin-left: 450px;
-		text-align: center
+		text-align: center;
+		float: none !important;
 
 }
 
@@ -16,49 +24,37 @@ li.name {
 
 	a {
 		color: black !important;
-		font-size: 20px;
+		font-size: 24px;
+		display: inline !important;
+		font-weight: 300;
+		font-style: italic;
 	}
 }
-
-/*ul.right {
-	margin-right: 20px;
-
-	
-}*/
-
-/*styling for the footer*/
-
-.footer-container {
-	margin-top: 65px;
-	bottom: 0  !important;
-}
-
-
-.learn-more {
-	background-color: rgba(0, 0, 0, 0.8);
+/*styling for content on the home page*/
+.welcome-content-container {
+	background-color: white;
+	z-index: 99;
+	position: relative;
+	top:500px;
+	padding-top: 100px;
+	padding-bottom: 500px;
 	bottom: 0;
 
-	h5 {
-		font-family: ubuntu;
-		color: silver;
+	.welcome-content-header {
+		h1 {
+			font-family: ubuntu;
+		}
 	}
 
-	p{ 
-		/*padding-bottom: 50px;*/
-		font-family: ubuntu;
-		font-weight: 300;
-		color: silver
+
+	.welcome-content-parag {
+		p{
+			font-family: ubuntu;
+		}
 	}
 }
+/*styling for the footer*/
 
-hr {
-	margin-bottom: 0;
-}
-/*styling for footer links*/
-
-.about-container {
-	padding-left: 200px;
-}
 
 /*styling for the background img*/
 
@@ -66,6 +62,7 @@ hr {
 
 	img {
 		-webkit-filter: grayscale(.3) opacity(0.9);
+		position: fixed;
 		z-index: 50;
 		width: 100%;
 		background: -webkit-gradient(linear color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.7)));
