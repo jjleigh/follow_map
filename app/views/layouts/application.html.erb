@@ -26,31 +26,17 @@
     }(document, ‘script’, ‘facebook-jssdk’));
   </script>
 
-
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><%= link_to 'Map me', root_url, :id => 'app-logo' %></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <% if current_user %>
-       
-      <% else %>
-        <li class="nav-link"><%#= link_to 'Sign up', new_session_path %></li>
-        <!-- <li class="nav-link"><%#= link_to 'Sign up', new_user_path %></li> -->
-      <% end %>
-
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to 'Map me', root_url, :id => 'app-logo' %></h1>
       </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
-    
-  </section>
-</nav>
+  </nav>
+</div>
   <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>

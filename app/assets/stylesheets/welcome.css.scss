@@ -3,22 +3,28 @@
 }
 
 nav.top-bar {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: white;
+}
+
+ul.title-area {
+		margin-left: 450px;
+		text-align: center
+
 }
 
 li.name {
 
 	a {
+		color: black !important;
 		font-size: 20px;
-		margin-left: 60px;
 	}
 }
 
-ul.right {
+/*ul.right {
 	margin-right: 20px;
 
 	
-}
+}*/
 
 /*styling for the footer*/
 
