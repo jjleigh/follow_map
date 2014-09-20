@@ -11,7 +11,7 @@
 .contact-container {
 	width:100%;
 	margin: 40px auto 0 ;
-	margin-bottom: 50px;
+	/*margin-bottom: 10px;*/
 	margin-top: 50px;
 }
 
@@ -107,45 +107,29 @@ ul.list {
 	}
 
 /*styling for the google twitter and facebook buttons*/
-
-.goog {
-
+.insta, .insta:hover {
+	border-radius: 3px;
+	font-size: 18px !important;
+	background-color: #517fa4;
+}
+.goog, .goog:hover {
 	background-color: #F22E0C;
 	border-radius: 3px;
-
-	
-		font-size: 18px !important;
+	font-size: 18px !important;
 	
 }
 
-.goog:hover {
-	background-color: #F22E0C;
-}
-
-.twit {
-
-	background-color: #27C6F5;
+.twit, .twit:hover {
+	background-color: #55acee;
 	border-radius: 3px;
-
-	
-		font-size: 18px !important;
+	font-size: 18px !important;
 	
 }
 
-.twit:hover {
-	background-color: #27C6F5;
-}
-
-.faceb {
-
+.faceb, .faceb:hover {
 	background-color: #294BA6;
 	border-radius: 3px;
-
-	
-		font-size: 18px !important;
+	font-size: 18px !important;
 	
 }
 
-.faceb:hover {
-	background-color: #294BA6;
-}
