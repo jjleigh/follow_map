@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
   # get 'auth/failure' => redirect('/')
+  get 'welcome/followers', to: 'welcome#fetch_follower_data', as: 'fetch_followers'
   match "log_out" => "sessions#destroy", :as => "log_out", via: [:get, :post]
   root to: "welcome#index"
 
